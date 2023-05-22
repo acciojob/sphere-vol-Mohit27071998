@@ -2,10 +2,11 @@ function volume_sphere() {
     //Write your code here
 	let rad =document.getElementById("radius").value
 
-	let ans = (4/3) * 3.14 * (rad*rad*rad);
-
+	let ans = (4 / 3) * Math.PI * Math.pow(rad, 3);
+	let out = parseFloat(ans.toFixed(4))
+      
 	let vol =document.getElementById("volume")
-	vol.value = ans;
+	vol.value = out;
 	return false;
   
 } 
